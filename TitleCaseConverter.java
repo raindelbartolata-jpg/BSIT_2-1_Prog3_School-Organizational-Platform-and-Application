@@ -23,6 +23,6 @@ public class TitleCaseConverter {
         String input = "hello world this is a test";
         String output = toTitleCase(input);
         System.out.println("Original: " + input);
-        System.out.println("Title Case: " + output);  // Output: "Hello World This Is A Test"
+        System.out.println("Title Case: " + output);  
     }
 }
