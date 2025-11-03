@@ -7,7 +7,7 @@ public class MostFrequentWord {
             return null;
         }
 
-        // Split into words, convert to lowercase, and remove non-alphabetic characters
+       
         String[] words = paragraph.toLowerCase().split("\\W+");
 
         // Use a HashMap to count frequencies
@@ -18,7 +18,7 @@ public class MostFrequentWord {
             }
         }
 
-        // Find the word with the maximum frequency
+      
         String mostFrequent = null;
         int maxCount = 0;
         for (Map.Entry<String, Integer> entry : wordCount.entrySet()) {
@@ -34,6 +34,6 @@ public class MostFrequentWord {
     public static void main(String[] args) {
         String paragraph = "This is a test paragraph. This paragraph has some words that repeat. This is a test.";
         String result = findMostFrequentWord(paragraph);
-        System.out.println("Most frequent word: " + result);  // Output: "this"
+        System.out.println("Most frequent word: " + result); 
     }
 }
